@@ -20,6 +20,16 @@
         padding: 0;
       }
 
+      p {
+        color: #fff;
+        margin: 2% 20% 0 0;
+      }
+
+      img {
+        max-width: 80%;
+        max-height: 100%;
+      }
+
       .links {
         width: 100%;
         height: 50px;
@@ -47,6 +57,22 @@
           display: flex;
       }
 
+      .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 16.6%;
+      }
+
+      .half_page {
+        width: 45%;
+        float: left;
+        margin-right: 5%;
+      }
+
+      .full_page {
+        width: 100%;
+      }
+
       .links label  {
         padding: 15px 0;
         flex-grow: 1;
@@ -66,6 +92,16 @@
 
       .links label:hover {
         opacity: 0.5;
+      }
+
+      #lb_logo {
+        max-width: 15%;
+        padding: 0 52px;
+      }
+
+      #logo {
+        max-width: 100%;
+        max-height: 100%;
       }
 
       #release {
@@ -102,6 +138,9 @@
   <body>
 
     <nav class="links">
+      <div id="lb_logo">
+        <img src="logo.png" alt="">
+      </div>
       <label for="rd_release">Release</label>
       <label for="rd_track">Tracks</label>
       <label for="rd_destaque">Destaques</label>
@@ -115,9 +154,45 @@
       <input type="radio" name="grupo" id="rd_contato">
 
       <section class="sections">
-          <section class="bloco" id="release"></section>
-          <section class="bloco" id="track"></section>
-          <section class="bloco" id="destaque"></section>
+          <section class="bloco" id="release">
+            <div class="container">
+              <div class="texto half_page">
+                  <p><strong>TITULO</strong></p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu dignissim nisi. Pellentesque id diam et tellus facilisis sollicitudin. Vivamus porttitor mollis mauris. Morbi pretium suscipit velit, non vestibulum velit euismod non. Phasellus feugiat interdum libero vel rutrum. Vestibulum vitae urna nunc. Quisque vestibulum, orci in malesuada volutpat, lectus ligula convallis elit, eu ultricies orci mi eu ante. Cras auctor nec augue ac mattis.</p>
+              </div>
+              <div class="foto half_page">
+                <img src="http://tvcultura.com.br/upload/tvcultura/programas/programa-imagem-som.jpg" alt="">
+              </div>
+            </div>
+          </section>
+
+          <section class="bloco" id="track">
+            <div class="container">
+              <div class="half_page">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/304227056&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+              </div>
+              <div class="half_page">
+                <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/309090933&amp;color=00aabb&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+              </div>
+            </div>
+          </section>
+
+          <section class="bloco" id="destaque">
+            <div class="container">
+              <div class="foto half_page">
+                <img src="http://tvcultura.com.br/upload/tvcultura/programas/programa-imagem-som.jpg" alt="">
+              </div>
+              <div class="texto half_page">
+                <ul>
+                  <li><p>Destaque 1</p></li>
+                  <li><p>Destaque 2</p></li>
+                  <li><p>Destaque 3</p></li>
+                  <li><p>Destaque 4</p></li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
           <section class="bloco" id="contato"></section>
       </section>
     </div>
